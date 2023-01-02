@@ -3,7 +3,9 @@ Investigation, scanning and enumeration of open ports on target machine for pent
 
 
 
-Usage: python3 ShowMeThePorts.py <options>
+Usage: python3 ShowMeThePorts.py <options> 
+
+HELP OPTION: -h / --help
 
 ENJOY!
 
