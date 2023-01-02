@@ -41,5 +41,3 @@ Options:
   
   
 If the program does not run netcat, consider updating it with: (sudo apt-get upgrade netcat)
-
-![Captura de tela de 2023-01-02 13-11-35](https://user-images.githubusercontent.com/103542430/210272696-62ea7af1-547c-496a-a556-2f57a45e62e4.png)
