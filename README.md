@@ -42,5 +42,6 @@ Options:
   
   
   
-If the program does not run netcat, consider updating it with: (sudo apt-get upgrade netcat)
+If the program does not run netcat, consider updating it with: (sudo apt-get upgrade netcat).
+
 some banners may not appear with the -lp option but may appear if you only scan the desired port with the -p option
