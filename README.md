@@ -11,16 +11,6 @@ ENJOY!
 
 
 
-
-
-
-
-
-
-https://user-images.githubusercontent.com/103542430/211035475-4e0fcc51-76ff-4123-8524-43a529067359.mp4
-
-
-
 ![image](https://user-images.githubusercontent.com/103542430/210264499-74a2e69c-21f2-456f-8b15-81c3b7676da8.png)
 
   
