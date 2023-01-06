@@ -93,17 +93,23 @@ def banner_grabber(target):
             if list == 80 or list == 8080:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 sock.settimeout(0.12)
-                sock.connect((f"{target_ip}", 80))
+                sock.connect((f"{target_ip}", list))
                 sock.send('GET\n'.encode())
                 response = sock.recv(1024)
                 print(response)
             print()
             print()    
     else:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect((f"{target_ip}", sp))
         print(f"Running Now on port {sp}:")
-        system(f'nc -v -W 2 -w 10 {target_ip} {sp}')
-        print()
-        print()
+        system(f'nc -v -W 2 -w 2 {target_ip} {sp}')
+        if sp == 80 or sp == 8080:
+            sock.send('GET\n'.encode())
+            response = sock.recv(1024)
+            print(response)
+    print()
+    print()
 
 
 if host is not None and banner is not None:
@@ -124,3 +130,5 @@ if host is None:
     print()
     print("Example: python3 ShowMeThePorts.py --target site.com -lp 1000")
     print("Example: python3 ShowMeThePorts.py -t www.hackme.com --banner")
+    print()
+    print("some banners may not appear with the -lp option but may appear if you only scan the desired port with the -p option")
