@@ -1,4 +1,4 @@
-# Pentester-journey
+# Show The Ports (Port Scanning)
 Investigation, scanning and enumeration of open ports on target machine for pentest recognition step
 
 
