@@ -6,9 +6,6 @@ Investigation, scanning and enumeration of open ports on target machine for pent
 `Usage: python3 ShowMeThePorts.py <options>`
 
 
-![Captura de tela de 2023-02-19 03-20-08](https://user-images.githubusercontent.com/103542430/219932471-d82a3f1b-fa07-4baf-8da1-f946a50df60f.png)
-
-
 **HELP OPTION:** `-h / --help`
 
 **ENJOY!**
