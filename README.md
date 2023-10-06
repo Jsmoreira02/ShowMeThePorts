@@ -2,7 +2,9 @@
 Investigation, scanning and enumeration of open ports on target machine for pentest recognition step
 
 
-`Usage: ./ShowMeThePorts.py <options>`
+`Usage: ./ShowMeThePorts <options>`
+`Example> ./ShowMeThePort 10.1.0.10 0-1000`
+`Example> ./ShowMeThePort 10.1.0.10 21`
 
 **Install SFML (UBUNTU):** `sudo apt-get install libsfml-dev`
 
