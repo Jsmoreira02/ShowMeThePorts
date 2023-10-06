@@ -1,10 +1,13 @@
 # Show The Ports (Port Scanning)
 Investigation, scanning and enumeration of open ports on target machine for pentest recognition step
 
-
 `Usage: ./ShowMeThePorts <options>`
+
 `Example> ./ShowMeThePort 10.1.0.10 0-1000`
+
 `Example> ./ShowMeThePort 10.1.0.10 21`
+
+##
 
 **Install SFML (UBUNTU):** `sudo apt-get install libsfml-dev`
 
@@ -12,7 +15,7 @@ Investigation, scanning and enumeration of open ports on target machine for pent
 
 **Compile with g++:** `g++ project.cpp -o ShowMeThePorts -lsfml-network -lsfml-system`
 
-
+##
 
 
 https://user-images.githubusercontent.com/103542430/211045595-a07b2879-9089-4dca-8d07-59659d964f23.mp4
