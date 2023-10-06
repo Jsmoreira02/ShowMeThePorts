@@ -18,7 +18,7 @@ Investigation, scanning and enumeration of open ports on target machine for pent
 ##
 
 
-https://user-images.githubusercontent.com/103542430/211045595-a07b2879-9089-4dca-8d07-59659d964f23.mp4
+![ezgif com-video-to-gif](https://github.com/Jsmoreira02/Port-Scanner/assets/103542430/042535be-3ee7-4b35-8b9a-f2b48d0088f8)
   
   
 > This program must be run in the linux terminal and serves to scan and enumerate services on a target.  
