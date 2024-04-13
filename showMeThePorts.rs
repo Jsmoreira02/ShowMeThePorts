@@ -26,11 +26,11 @@ fn get_banner(open_ports: Vec<u16>, host: &str) -> &'static str {
 
         let port = &ports.to_string();
         let args = vec!["-v", "-W", "2", "-w", "3", host, &port];
-        let curl_args = vec!["-G", host, &port, "-m", "5", "-s"];
-
+        let curl_args = format!("curl -Is {} | grep -i '^Server:'", host);
+        
         if ports == 80 || ports == 8080 {
 
-            match Command::new("curl").args(curl_args).output() {
+            match Command::new("sh").arg("-c").arg(&curl_args).output() {
                 Ok(output) => { println!("Running now on port {} => {}", port, String::from_utf8_lossy(&output.stdout)); }
                 Err(err) => {
                     println!("[!] Failed to execute process: {}", err);
