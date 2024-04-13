@@ -18,7 +18,9 @@ Rust port scanning and banner grabber for investigation, scanning and enumeratio
 
 `Example> ./ShowMeThePort 10.1.0.10 0-1000`
 
-**Compiling** `rustc showMeThePorts`
+**Compiling**: `rustc showMeThePorts`
+
+**Install OpenBSD netcat**: `sudo apt install netcat-openbsd`
 
 ![ezgif com-video-to-gif](https://github.com/Jsmoreira02/Port-Scanner/assets/103542430/042535be-3ee7-4b35-8b9a-f2b48d0088f8)
 
