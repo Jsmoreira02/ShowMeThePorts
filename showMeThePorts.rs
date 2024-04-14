@@ -116,8 +116,6 @@ fn main(){
         return;
     }
 
-    let range_of_ports = start..=end;
-
     println!("{}", logo());
-    println!("{}", scan_ports(ip, range_of_ports));
+    println!("{}", scan_ports(ip, start..=end));
 }
