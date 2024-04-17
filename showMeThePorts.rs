@@ -22,12 +22,13 @@ fn get_banner(open_ports: Vec<u16>, host: &str) -> &'static str {
     println!("[+] Getting Banner");
     println!("====================\n");
 
+    let curl_args = format!("curl -Is {} | grep -i '^Server:'", host);
+
     for ports in open_ports {
 
         let port = &ports.to_string();
-        let args = vec!["-v", "-W", "2", "-w", "3", host, &port];
-        let curl_args = format!("curl -Is {} | grep -i '^Server:'", host);
-        
+        let netcat_args = vec!["-v", "-W", "2", "-w", "3", host, &port];
+
         if ports == 80 || ports == 8080 {
 
             match Command::new("sh").arg("-c").arg(&curl_args).output() {
@@ -38,7 +39,7 @@ fn get_banner(open_ports: Vec<u16>, host: &str) -> &'static str {
             }
         } 
         else {
-            match Command::new("nc").args(args).output() {
+            match Command::new("nc").args(netcat_args).output() {
                 Ok(output) => { println!("Running now on port {} => {}", port, String::from_utf8_lossy(&output.stdout)); }
                 Err(err) => {
                     println!("[!] Failed to execute process: {}", err);
