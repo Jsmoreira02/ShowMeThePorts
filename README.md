@@ -16,7 +16,7 @@ Rust port scanning and banner grabber for investigation, scanning and enumeratio
 
 `Usage: ./ShowMeThePorts <Scope>`
 
-`Example> ./ShowMeThePort 10.1.0.10 0-1000`
+`Example: ./ShowMeThePort 10.1.0.10 0-1000`
 
 **Compiling**: `rustc showMeThePorts`
 
