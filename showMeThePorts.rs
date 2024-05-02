@@ -88,7 +88,7 @@ fn main(){
     if args.len() < 3 {
 
         println!("Usage: ./app <IP> <Number of ports to scan>");
-        println!("\nExample: ;/app 192.168.14.234 0-8000 ---> It will scan 8000 ports, starting from zero");
+        println!("\nExample: ./app 192.168.14.234 0-8000 ---> It will scan 8000 ports, starting from zero");
         return;
     }
 
